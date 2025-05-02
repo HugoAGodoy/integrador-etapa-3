@@ -10,7 +10,7 @@ import routerUsuarios from './routers/usuarios.router.js'
 import routerUploads from './routers/uploads.router.js'
 
 const app = express()
-const PORT = process.env.PORT
+const PORT = 8080
 const URI_DB = process.env.URI_REMOTA
 const URL_FRONT = process.env.URL_FRONTEND_CORS
 // console.log(URI_DB)
