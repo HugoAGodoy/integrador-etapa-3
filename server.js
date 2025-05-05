@@ -22,6 +22,7 @@ const corsConfig = {
   origin: URL_FRONT    /*prod:  http://etapa-3.netlify.com/ dev: http://localhost:5173*/
 }
 
+
 // Middlewares
 
 app.use(express.json())
