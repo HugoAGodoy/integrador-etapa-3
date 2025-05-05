@@ -7,6 +7,7 @@ const handleMongoId = (elemento) => {
         console.log('Llego un array de productos')
 
         for (let i = 0; i < elemento.length; i++) {
+            console.log(elemento[i])
             elemento[i].id = elemento[i][clave] 
             delete elemento[i][clave] 
         }
@@ -18,6 +19,7 @@ const handleMongoId = (elemento) => {
     }
 
     return elemento 
+
 
 
 }

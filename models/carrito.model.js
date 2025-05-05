@@ -27,6 +27,20 @@ const crearCarrito = async (carrito) => {
     }
 }
 
+
+
+
+
+const obtenerCarritos = async () => {
+    try {
+        const carritos = await CarritoModel.find();
+        return carritos;
+    } catch (error) {
+        throw error;
+    }
+};
+
 export default {
-    crearCarrito
-}
+    crearCarrito,
+    obtenerCarritos
+};

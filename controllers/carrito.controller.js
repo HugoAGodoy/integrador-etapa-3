@@ -16,6 +16,19 @@ const guardarCarrito = async (req, res) => {
     }
 }
 
+
+
+const obtenerCarritos = async (req, res) => {
+    try {
+        const carritos = await model.obtenerCarritos();
+        res.json(carritos);
+    } catch (error) {
+        console.log('[obtenerCarritos]', error);
+        res.status(500).json({ mensaje: 'No se pudieron obtener los carritos' });
+    }
+};
+
 export default {
-    guardarCarrito
-}
+    guardarCarrito,
+    obtenerCarritos
+};
