@@ -13,6 +13,7 @@ import routerCarrito from './routers/carrito.router.js'
 const app = express()
 const PORT = process.env.PORT
 const URI_DB = process.env.URI_REMOTA
+console.log("URI_DB:", URI_DB)
 const URL_FRONT = process.env.URL_FRONTEND_CORS
 // console.log(URI_DB)
 
